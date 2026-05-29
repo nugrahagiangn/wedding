@@ -320,7 +320,7 @@ export default function BukuTamu({ initialGuestName = "" }: BukuTamuProps) {
               <label className="block text-xs font-semibold uppercase tracking-wider text-amber-400 mb-1.5 font-serif">Ucapan / Doa untuk Pengantin</label>
               <textarea
                 rows={3}
-                placeholder="Tuliskan ucapan selamat dan doa tulus bagi Arya & Shinta..."
+                placeholder="Tuliskan ucapan selamat dan doa tulus bagi Gian & Cucu..."
                 value={comment}
                 onChange={(e) => setComment(e.target.value)}
                 className="w-full bg-stone-900 border border-stone-800 focus:border-amber-400 focus:outline-none rounded-xl px-4 py-2.5 text-stone-200 text-sm font-sans transition-all resize-none"

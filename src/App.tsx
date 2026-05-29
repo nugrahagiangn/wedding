@@ -52,9 +52,8 @@ export default function App() {
         if (stored) {
           try {
             const parsed = JSON.parse(stored);
-            // setMusicUrl(parsed.activeSongUrl || "https://archive.org/download/bruno-mars-all-songs/01%20-%20Just%20The%20Way%20You%20Are.mp3");
-            setMusicUrl(parsed.activeSongUrl || "./music.mp3");
-            setMusicTitle(parsed.activeSongTitle || "Bruno Mars - Risk It All");
+            setMusicUrl(parsed.activeSongUrl || "https://archive.org/download/bruno-mars-all-songs/01%20-%20Just%20The%20Way%20You%20Are.mp3");
+            setMusicTitle(parsed.activeSongTitle || "Bruno Mars - Just The Way You Are");
             return;
           } catch (e) {}
         }
@@ -118,7 +117,7 @@ export default function App() {
           >
             {/* Sticky/Floating Navigation Bar (Minimalist Indonesian style) */}
             <header className="fixed top-4 inset-x-4 z-40 max-w-lg mx-auto flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md rounded-full border border-stone-200/50 shadow-md">
-              <span className="font-accent text-amber-900 text-lg font-bold">A&amp;S</span>
+              <span className="font-accent text-amber-900 text-lg font-bold">G&amp;C</span>
               <nav className="flex items-center gap-1.5 md:gap-3 text-[10px] md:text-xs font-serif font-bold tracking-wider text-stone-600 uppercase">
                 <a href="#mempelai" className="hover:text-amber-800 transition-colors">Mempelai</a>
                 <span className="text-stone-300">•</span>
@@ -175,7 +174,7 @@ export default function App() {
                   transition={{ delay: 0.6, duration: 1 }}
                   className="text-[11px] sm:text-xs tracking-[0.3em] font-sans font-semibold text-stone-300 uppercase border-y border-white/10 py-3"
                 >
-                  MINGGU, 28 JUNI 2026 • GARUT, JAWA BARAT
+                  KAMIS, 14 MEI 2026 • GARUT, JAWA BARAT
                 </motion.p>
               </div>
 
@@ -222,7 +221,7 @@ export default function App() {
                   </p>
                   
                   <div className="pt-4 flex flex-col items-center">
-                    <p className="text-base font-accent text-amber-400">Arya &amp; Shinta</p>
+                    <p className="text-base font-accent text-amber-400">Gian &amp; Cucu</p>
                     <button 
                       onClick={() => setIsAdminOpen(true)}
                       className="text-[9.5px] uppercase tracking-[0.25em] font-mono text-stone-600 mt-2 hover:text-amber-400 transition-colors cursor-pointer"

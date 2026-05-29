@@ -6,8 +6,8 @@ export const mempelaiPria: MempelaDetail = {
   nickName: "Gian",
   photoUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
   fatherName: "Bapak Endang Sudrajat",
-  motherName: "Ibu Siti Maryam",
-  instagram: "https://instagram.com/arya.sangaji",
+  motherName: "Ibu Siti Mariyam",
+  instagram: "https://instagram.com/nugrahagiangn",
 };
 
 export const mempelaiWanita: MempelaDetail = {
@@ -15,12 +15,12 @@ export const mempelaiWanita: MempelaDetail = {
   fullName: "Cucu Rohimas",
   nickName: "Cucu",
   photoUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800",
-  fatherName: "Bapak Pudin",
-  motherName: "Ibu Oyoh",
-  instagram: "https://instagram.com/shinta.wardhani",
+  fatherName: "Bapak -",
+  motherName: "Ibu -",
+  instagram: "https://instagram.com/cucurohimas",
 };
 
-export const targetWeddingDate = "2026-09-12T09:00:00+07:00"; // Saturday, 12 Sept 2026 09.00 WIB
+export const targetWeddingDate = "2026-05-14T08:00:00+07:00"; // Thursday, 14 May 2026 08:00 WIB
 
 export const bcaAccount = {
   bankName: "Bank Central Asia (BCA)",
@@ -29,15 +29,15 @@ export const bcaAccount = {
 };
 
 export const mandiriAccount = {
-  bankName: "Bank BRI",
+  bankName: "Bank Rakyat Indonesia (BRI)",
   name: "Cucu Rohimas",
-  number: "142-00-9876543-2",
+  number: "002-5011-4135750-8",
 };
 
 export const giftAddress = {
   name: "Kediaman Mempelai Wanita",
-  address: "Jl. Diponegoro No. 45, Menteng, Kota Jakarta Pusat, DKI Jakarta 10310",
-  receiver: "Bapak Bambang Wardhana / Shinta",
+  address: "Kp. Manguneng, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, Jawa Barat, 10310",
+  receiver: "Bu Nelis / Cucu",
 };
 
 export const agendaAkad: AgendaEvent = {
@@ -52,12 +52,12 @@ export const agendaAkad: AgendaEvent = {
 
 export const agendaResepsi: AgendaEvent = {
   title: "Resepsi Pernikahan",
-  dateStr: "Sabtu, 12 September 2026",
-  timeStr: "11:00 - 14:00 WIB",
-  locationName: "Gedung Serbaguna Sunda Kelapa",
-  address: "Kawasan Masjid Agung Sunda Kelapa, Menteng, Kota Jakarta Pusat, 10310",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3966.4526019599554!2d106.83155797587844!3d-6.203871993783935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41764eb8cf3%3A0xc3f8e5b66d5b03bc!2sMasjid%20Agung%20Sunda%20Kelapa!5e0!3m2!1sid!2sid!4v1716380000000!5m2!1sid!2sid",
-  mapNavigationUrl: "https://maps.google.com/?q=Masjid+Agung+Sunda+Kelapa+Menteng",
+  dateStr: "Kamis, 14 Mei 2026",
+  timeStr: "08:00 - selesai WIB",
+  locationName: "Rumah Kediaman Mempelai Wanita",
+  address: "Kp. Manguneng, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, Jawa Barat, 10310",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.518608882937!2d107.6961136!3d-7.4646549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e680df8374d898d%3A0x6e9f16e788bc11e6!2sBungbulang%2C%20Kabupaten%20Garut%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1716380000000!5m2!1sid!2sid",
+  mapNavigationUrl: "https://maps.google.com/?q=Bungbulang+Garut",
 };
 
 export const galleryImages = [

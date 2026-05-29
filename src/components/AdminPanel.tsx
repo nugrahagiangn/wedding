@@ -87,7 +87,7 @@ export default function AdminPanel({
 
 Yth. *${name}*,
 
-Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri dan memberikan doa restu pada hari bahagia pernikahan kami, Arya & Shinta.
+Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i untuk menghadiri dan memberikan doa restu pada hari bahagia pernikahan kami, Gian & Cucu.
 
 Berikut adalah detail undangan digital kami:
 🔗 ${url}
@@ -96,14 +96,14 @@ Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i
 
 Terima kasih atas perhatiannya.
 Wassalamu'alaikum Wr. Wb.
-— Arya & Shinta`
+— Gian & Cucu`
     },
     {
       name: "Formal Umum (Nasional/Internasional)",
       text: (name: string, url: string) => 
 `Kepada Yth. Bapak/Ibu/Saudara/i *${name}*,
 
-Dengan penuh rasa hormat dan kebahagiaan, kami mengundang Anda untuk menghadiri perayaan pernikahan kami, Arya Wijaya Sangaji & Shinta Laksmi Wardhani.
+Dengan penuh rasa hormat dan kebahagiaan, kami mengundang Anda untuk menghadiri perayaan pernikahan kami, Gian Nugraha & Cucu Rohimas.
 
 Detail informasi acara serta konfirmasi RSVP dapat Anda klik melalui tautan undangan digital di bawah ini:
 🔗 ${url}
@@ -111,7 +111,7 @@ Detail informasi acara serta konfirmasi RSVP dapat Anda klik melalui tautan unda
 Kehadiran serta doa restu Anda di hari bahagia kami akan sangat melengkapi momen sakral ini.
 
 Salam hangat penuh kasih,
-— Arya & Shinta`
+— Gian & Cucu`
     },
     {
       name: "Krabat Dekat / Sahabat (Casual)",
@@ -168,12 +168,12 @@ Sampai ketemu di pesta nanti!
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
-    // Simple secure password: Sep 12, 2026 is Arya-Shinta wedding -> 120926, or "admin"
-    if (passcode.trim() === "120926" || passcode.toLowerCase() === "admin") {
+    // Simple secure password: May 14, 2026 is Gian-Cucu wedding -> 140526, or "admin"
+    if (passcode.trim() === "140526" || passcode.toLowerCase() === "admin") {
       setIsAuthenticated(true);
       setErrorMsg("");
     } else {
-      setErrorMsg("Kode PIN salah. Tips: Gunakan tanggal nikah pengantin (120926) atau kata sandi 'admin'.");
+      setErrorMsg("Kode PIN salah. Tips: Gunakan tanggal nikah pengantin (140526) atau kata sandi 'admin'.");
     }
   };
 
@@ -473,7 +473,7 @@ Sampai ketemu di pesta nanti!
             <div className="space-y-2">
               <h3 className="text-xl font-serif font-medium text-amber-200">Autentikasi Pengantin</h3>
               <p className="text-xs text-stone-400 leading-relaxed font-sans">
-                Akses panel ini hanya dibatasi untuk Arya &amp; Shinta sebagai penyelenggara. Sila masukkan kode PIN verifikasi panitia.
+                Akses panel ini hanya dibatasi untuk Gian &amp; Cucu sebagai penyelenggara. Sila masukkan kode PIN verifikasi panitia.
               </p>
             </div>
 
@@ -482,7 +482,7 @@ Sampai ketemu di pesta nanti!
                 <label className="block text-[11px] font-semibold uppercase tracking-wider text-stone-400 mb-1.5 font-sans">Kode PIN Sandi</label>
                 <input 
                   type="password"
-                  placeholder="Masukkan 6 Digit PIN Khusus (cth: 120926)"
+                  placeholder="Masukkan 6 Digit PIN Khusus (cth: 140526)"
                   value={passcode}
                   onChange={(e) => setPasscode(e.target.value)}
                   className="w-full bg-stone-900 border border-stone-800 focus:border-amber-400 focus:outline-none rounded-xl px-4 py-3 text-center tracking-widest text-stone-100 font-bold font-mono text-lg transition-all"
