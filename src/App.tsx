@@ -52,8 +52,9 @@ export default function App() {
         if (stored) {
           try {
             const parsed = JSON.parse(stored);
-            setMusicUrl(parsed.activeSongUrl || "https://archive.org/download/bruno-mars-all-songs/01%20-%20Just%20The%20Way%20You%20Are.mp3");
-            setMusicTitle(parsed.activeSongTitle || "Bruno Mars - Just The Way You Are");
+            // setMusicUrl(parsed.activeSongUrl || "https://archive.org/download/bruno-mars-all-songs/01%20-%20Just%20The%20Way%20You%20Are.mp3");
+            setMusicUrl(parsed.activeSongUrl || "./music.mp3");
+            setMusicTitle(parsed.activeSongTitle || "Bruno Mars - Risk It All");
             return;
           } catch (e) {}
         }
