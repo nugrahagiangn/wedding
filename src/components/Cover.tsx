@@ -56,11 +56,11 @@ export default function Cover({ onOpen, guestName }: CoverProps) {
             className="flex flex-col items-center"
           >
             <h1 className="text-4xl sm:text-5xl font-accent text-amber-300 tracking-wider">
-              Arya & Shinta
+              Gian & Cucu
             </h1>
             <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent my-3" />
             <p className="text-xs tracking-[0.15em] text-stone-300 font-sans font-medium">
-              SABTU, 12 SEPTEMBER 2026
+              MINGGU, 28 JUNI 2026
             </p>
           </motion.div>
         </div>
