@@ -78,7 +78,7 @@ async function startServer() {
       relationship: "Teman Kuliah",
       rsvpHadir: "hadir",
       countGuests: 2,
-      comment: "Selamat atas pernikahannya Arya & Shinta! Semoga dilancarkan semua prosesi acaranya dan menjadi keluarga yang sakinah, mawaddah, warahmah. Menuju ibadah terpanjang dengan bahagia!",
+      comment: "Selamat atas pernikahannya Gian & Cucu! Semoga dilancarkan semua prosesi acaranya dan menjadi keluarga yang sakinah, mawaddah, warahmah. Menuju ibadah terpanjang dengan bahagia!",
       createdAt: new Date(Date.now() - 3600000 * 4).toISOString() // 4 hours ago
     },
     {

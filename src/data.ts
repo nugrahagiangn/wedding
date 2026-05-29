@@ -2,21 +2,21 @@ import { MempelaDetail, AgendaEvent } from "./types";
 
 export const mempelaiPria: MempelaDetail = {
   role: "pria",
-  fullName: "Arya Wijaya Sangaji, S.T.",
-  nickName: "Arya",
+  fullName: "Gian Nugraha",
+  nickName: "Gian",
   photoUrl: "https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&q=80&w=800",
-  fatherName: "Bapak H. Amran Sangaji, M.B.A.",
-  motherName: "Ibu Hj. Rina Herawati",
+  fatherName: "Bapak Endang Sudrajat",
+  motherName: "Ibu Siti Maryam",
   instagram: "https://instagram.com/arya.sangaji",
 };
 
 export const mempelaiWanita: MempelaDetail = {
   role: "wanita",
-  fullName: "Shinta Laksmi Wardhani, S.I.Kom.",
-  nickName: "Shinta",
+  fullName: "Cucu Rohimas",
+  nickName: "Cucu",
   photoUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800",
-  fatherName: "Bapak Drs. H. Bambang Wardhana",
-  motherName: "Ibu Hj. Siti Aminah",
+  fatherName: "Bapak Pudin",
+  motherName: "Ibu Oyoh",
   instagram: "https://instagram.com/shinta.wardhani",
 };
 
@@ -24,13 +24,13 @@ export const targetWeddingDate = "2026-09-12T09:00:00+07:00"; // Saturday, 12 Se
 
 export const bcaAccount = {
   bankName: "Bank Central Asia (BCA)",
-  name: "Arya Wijaya Sangaji",
-  number: "123-098-4567",
+  name: "Gian Nugraha",
+  number: "67-555-62860",
 };
 
 export const mandiriAccount = {
-  bankName: "Bank Mandiri",
-  name: "Shinta Laksmi Wardhani",
+  bankName: "Bank BRI",
+  name: "Cucu Rohimas",
   number: "142-00-9876543-2",
 };
 

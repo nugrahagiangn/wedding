@@ -126,7 +126,7 @@ Yuk check tautan undangan digital resmi kami di bawah ini untuk melihat jadwal &
 Oya, kamu juga bisa tulis doa/ucapan serta isi konfirmasi kedatangan di bagian Buku Tamu / RSVP websitenya ya!
 
 Sampai ketemu di pesta nanti!
-— Arya & Shinta`
+— Gian & Cucu`
     }
   ];
 

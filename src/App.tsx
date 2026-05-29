@@ -166,7 +166,7 @@ export default function App() {
                   transition={{ delay: 0.4, duration: 1 }}
                   className="text-5xl sm:text-7xl font-accent text-amber-300 tracking-wide font-medium"
                 >
-                  Arya &amp; Shinta
+                  Gian &amp; Cucu
                 </motion.h1>
 
                 <motion.p
@@ -175,7 +175,7 @@ export default function App() {
                   transition={{ delay: 0.6, duration: 1 }}
                   className="text-[11px] sm:text-xs tracking-[0.3em] font-sans font-semibold text-stone-300 uppercase border-y border-white/10 py-3"
                 >
-                  SABTU, 12 SEPTEMBER 2026 • JAKARTA, INDONESIA
+                  MINGGU, 28 JUNI 2026 • GARUT, JAWA BARAT
                 </motion.p>
               </div>
 

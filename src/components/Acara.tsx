@@ -52,8 +52,8 @@ export default function Acara() {
 
   // Google Calendar URL creator
   const getGoogleCalendarUrl = (event: typeof agendaAkad) => {
-    const title = `Wedding of Arya & Shinta - ${event.title}`;
-    const details = `Menghadiri Acara ${event.title} pernikahan Arya dan Shinta di ${event.locationName}. Alamat: ${event.address}`;
+    const title = `Wedding of Gian & Cucu - ${event.title}`;
+    const details = `Menghadiri Acara ${event.title} pernikahan Gian dan Cucu di ${event.locationName}. Alamat: ${event.address}`;
     const location = event.locationName;
     const dates = "20260912T010000Z/20260912T070000Z"; // preset approximate UTC for Sept 12 2026
     return `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(title)}&dates=${dates}&details=${encodeURIComponent(details)}&location=${encodeURIComponent(location)}`;
