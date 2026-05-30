@@ -52,7 +52,7 @@ export const agendaAkad: AgendaEvent = {
 
 export const agendaResepsi: AgendaEvent = {
   title: "Resepsi Pernikahan",
-  dateStr: "Minggu, 28 Juni 2026",
+  dateStr: "Ahad, 28 Juni 2026",
   timeStr: "08:00 - selesai WIB",
   locationName: "Rumah Kediaman Mempelai Wanita",
   address: "Kp. Manguneng, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, Jawa Barat, 10310",

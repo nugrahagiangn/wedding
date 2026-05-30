@@ -195,7 +195,7 @@ export default function App() {
                   transition={{ delay: 0.6, duration: 1 }}
                   className="text-[11px] sm:text-xs tracking-[0.3em] font-sans font-semibold text-stone-300 uppercase border-y border-white/10 py-3"
                 >
-                  MINGGU, 28 JUNI 2026 • GARUT, JAWA BARAT
+                  AHAD, 28 JUNI 2026 • GARUT, JAWA BARAT
                 </motion.p>
               </div>
 
