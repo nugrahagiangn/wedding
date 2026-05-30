@@ -20,7 +20,7 @@ export default function App() {
   const [guestName, setGuestName] = useState("");
 
   // Custom states for active sound stream and pengantin settings
-  const [musicUrl, setMusicUrl] = useState("music.mp3");
+  const [musicUrl, setMusicUrl] = useState("brunomars.mp3");
   const [musicTitle, setMusicTitle] = useState("Bruno Mars - Risk It All");
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [guestbookRefreshKey, setGuestbookRefreshKey] = useState(0);
@@ -53,12 +53,12 @@ export default function App() {
         if (stored) {
           try {
             const parsed = JSON.parse(stored);
-            setMusicUrl(parsed.activeSongUrl || "music.mp3");
+            setMusicUrl(parsed.activeSongUrl || "brunomars.mp3");
             setMusicTitle(parsed.activeSongTitle || "Bruno Mars - Risk It All");
             return;
           } catch (e) {}
         }
-        setMusicUrl("music.mp3");
+        setMusicUrl("brunomars.mp3");
         setMusicTitle("Bruno Mars - Risk It All");
       });
   }, []);

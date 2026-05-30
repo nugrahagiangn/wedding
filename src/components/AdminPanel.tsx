@@ -62,7 +62,7 @@ export default function AdminPanel({
   const musicPresets = [
     {
       title: "Bruno Mars - Risk It All",
-      url: "music.mp3"
+      url: "brunomars.mp3"
     },
     {
       title: "Bruno Mars - Just The Way You Are",

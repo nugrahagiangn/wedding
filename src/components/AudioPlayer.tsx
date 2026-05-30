@@ -8,11 +8,11 @@ interface AudioPlayerProps {
 }
 
 function resolveAudioUrl(url: string): string {
-  if (!url) return "music.mp3";
+  if (!url) return "brunomars.mp3";
   return url;
 }
 
-export default function AudioPlayer({ isPlaying, onToggle, audioUrl = "music.mp3" }: AudioPlayerProps) {
+export default function AudioPlayer({ isPlaying, onToggle, audioUrl = "brunomars.mp3" }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [errorOccurred, setErrorOccurred] = useState(false);
 
