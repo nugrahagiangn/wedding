@@ -386,8 +386,8 @@ Sampai ketemu di pesta nanti!
     } else {
       let resolvedUrl = songUrl;
       const isStaticHost = 
-        window.location.hostname.endsWith(".github.io") || 
-        window.location.hostname.includes("github.io") || 
+        window.location.hostname.endsWith(".github.io/wedding") || 
+        window.location.hostname.includes("github.io/wedding") || 
         (!window.location.port && window.location.hostname !== "localhost");
 
       if (isStaticHost) {
