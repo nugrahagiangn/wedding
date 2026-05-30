@@ -226,7 +226,7 @@ export default function BukuTamu({ initialGuestName = "" }: BukuTamuProps) {
               <label className="block text-xs font-semibold uppercase tracking-wider text-amber-400 mb-1.5 font-serif">Hubungan / Kerabat</label>
               <input
                 type="text"
-                placeholder="cth. Teman Kuliah, Sepupu Shinta, Tetangga"
+                placeholder="cth. Teman Kuliah, Sepupu, Tetangga"
                 value={relationship}
                 onChange={(e) => setRelationship(e.target.value)}
                 className="w-full bg-stone-900 border border-stone-800 focus:border-amber-400 focus:outline-none rounded-xl px-4 py-2.5 text-stone-200 text-sm font-sans transition-all"

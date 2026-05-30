@@ -28,14 +28,14 @@ export default function PetaLokasi() {
                 <h3 className="font-serif font-bold text-lg">Detail Lokasi</h3>
               </div>
               <p className="text-sm text-stone-600 leading-relaxed font-sans">
-                Acara Akad Nikah dan Resepsi diselenggarakan di area kompleks <strong>Masjid Agung Sunda Kelapa, Menteng</strong>. Lokasi berada di Jantung Kota Jakarta dan sangat mudah dijangkau dengan kendaraan pribadi maupun layanan transportasi umum.
+                Acara Akad Nikah dan Resepsi diselenggarakan di rumah kediaman mempelai wanita di <strong>Kp. Manguneng RT/RW 04/09, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut</strong>. Lokasi berada di selatan Kab. Garut dan dekat ke area pantai selatan.
               </p>
               
               <div className="space-y-2 border-t border-stone-100 pt-4">
                 <div className="flex gap-2">
                   <MapPin className="w-4 h-4 text-amber-600 shrink-0 mt-0.5" />
                   <span className="text-xs text-stone-500 font-sans font-medium">
-                    Kawasan Masjid Agung Sunda Kelapa, Menteng, DKI Jakarta
+                    Jalan Raya Bungbulang, Cihikeu, Kec. Bungbulang, Garut
                   </span>
                 </div>
               </div>
