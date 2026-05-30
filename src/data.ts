@@ -53,7 +53,7 @@ export const agendaAkad: AgendaEvent = {
 export const agendaResepsi: AgendaEvent = {
   title: "Resepsi Pernikahan",
   dateStr: "Ahad, 28 Juni 2026",
-  timeStr: "08:00 - selesai WIB",
+  timeStr: "10:00 - selesai WIB",
   locationName: "Rumah Kediaman Mempelai Wanita",
   address: "Kp. Manguneng RT/RW 04/09, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, 44165",
   mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.442903517223!2d107.6073002!3d-7.4550998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6620f002feaf33%3A0x2ecf07b5c7c24898!2sTOKO%20SRC%20Ucu!5e0!3m2!1sen!2sid!4v1700000000000",
