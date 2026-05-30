@@ -61,8 +61,8 @@ export default function AdminPanel({
   // Preset background songs list
   const musicPresets = [
     {
-      title: "Lagu Utama Undangan (music.mp3)",
-      url: "/music.mp3"
+      title: "Bruno Mars - Risk It All",
+      url: "music.mp3"
     },
     {
       title: "Bruno Mars - Just The Way You Are",

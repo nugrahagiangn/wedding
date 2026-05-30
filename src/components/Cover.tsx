@@ -60,7 +60,7 @@ export default function Cover({ onOpen, guestName }: CoverProps) {
             </h1>
             <div className="h-[1px] w-24 bg-gradient-to-r from-transparent via-amber-400/60 to-transparent my-3" />
             <p className="text-xs tracking-[0.15em] text-stone-300 font-sans font-medium">
-              KAMIS, 14 MEI 2026
+              AHAD, 28 JUNI 2026
             </p>
           </motion.div>
         </div>

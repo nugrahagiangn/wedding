@@ -19,8 +19,8 @@ export default function App() {
   const [guestName, setGuestName] = useState("");
 
   // Custom states for active sound stream and pengantin settings
-  const [musicUrl, setMusicUrl] = useState("/music.mp3");
-  const [musicTitle, setMusicTitle] = useState("Lagu Utama (music.mp3)");
+  const [musicUrl, setMusicUrl] = useState("music.mp3");
+  const [musicTitle, setMusicTitle] = useState("Bruno Mars - Risk It All");
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [guestbookRefreshKey, setGuestbookRefreshKey] = useState(0);
 
@@ -52,13 +52,13 @@ export default function App() {
         if (stored) {
           try {
             const parsed = JSON.parse(stored);
-            setMusicUrl(parsed.activeSongUrl || "/music.mp3");
-            setMusicTitle(parsed.activeSongTitle || "Lagu Utama (music.mp3)");
+            setMusicUrl(parsed.activeSongUrl || "music.mp3");
+            setMusicTitle(parsed.activeSongTitle || "Bruno Mars - Risk It All");
             return;
           } catch (e) {}
         }
-        setMusicUrl("/music.mp3");
-        setMusicTitle("Lagu Utama (music.mp3)");
+        setMusicUrl("music.mp3");
+        setMusicTitle("Bruno Mars - Risk It All");
       });
   }, []);
 
@@ -195,7 +195,7 @@ export default function App() {
                   transition={{ delay: 0.6, duration: 1 }}
                   className="text-[11px] sm:text-xs tracking-[0.3em] font-sans font-semibold text-stone-300 uppercase border-y border-white/10 py-3"
                 >
-                  KAMIS, 14 MEI 2026 • GARUT, JAWA BARAT
+                  MINGGU, 28 JUNI 2026 • GARUT, JAWA BARAT
                 </motion.p>
               </div>
 

@@ -82,7 +82,7 @@ export default function Mempelai() {
                 </h4>
                 <div className="w-12 h-[1px] bg-amber-655/40 mx-auto my-4" />
                 <p className="text-stone-500 text-sm leading-relaxed max-w-xs mx-auto">
-                  Putra dari Pasangan:
+                  Putra ke-3 dari Pasangan:
                   <br />
                   <span className="font-semibold text-stone-700">{mempelaiPria.fatherName}</span>
                   <br />
@@ -144,7 +144,7 @@ export default function Mempelai() {
                 </h4>
                 <div className="w-12 h-[1px] bg-amber-655/40 mx-auto my-4" />
                 <p className="text-stone-500 text-sm leading-relaxed max-w-xs mx-auto">
-                  Putri dari Pasangan:
+                  Putri ke-3 (Bungsu) dari Pasangan:
                   <br />
                   <span className="font-semibold text-stone-700">{mempelaiWanita.fatherName}</span>
                   <br />
