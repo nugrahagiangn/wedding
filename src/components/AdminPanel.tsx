@@ -386,8 +386,8 @@ Sampai ketemu di pesta nanti!
     } else {
       let resolvedUrl = songUrl;
       const isStaticHost = 
-        window.location.hostname.endsWith(".github.io/wedding") || 
-        window.location.hostname.includes("github.io/wedding") || 
+        window.location.hostname.endsWith(".github.io") || 
+        window.location.hostname.includes("github.io") || 
         (!window.location.port && window.location.hostname !== "localhost");
 
       if (isStaticHost) {
@@ -415,7 +415,7 @@ Sampai ketemu di pesta nanti!
     const origin = window.location.origin;
     if (!guestName.trim()) return origin;
     const cleanName = encodeURIComponent(guestName.trim());
-    return `${origin}/?to=${cleanName}`;
+    return `${origin}/wedding?to=${cleanName}`;
   };
 
   const getWaText = () => {
