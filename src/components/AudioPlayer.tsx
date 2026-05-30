@@ -7,12 +7,18 @@ interface AudioPlayerProps {
   audioUrl?: string;
 }
 
-export default function AudioPlayer({ isPlaying, onToggle, audioUrl = "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3" }: AudioPlayerProps) {
+function resolveAudioUrl(url: string): string {
+  if (!url) return "/music.mp3";
+  return url;
+}
+
+export default function AudioPlayer({ isPlaying, onToggle, audioUrl = "/music.mp3" }: AudioPlayerProps) {
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const [errorOccurred, setErrorOccurred] = useState(false);
 
   useEffect(() => {
-    const audio = new Audio(audioUrl);
+    const resolved = resolveAudioUrl(audioUrl);
+    const audio = new Audio(resolved);
     audio.loop = true;
     audio.volume = 0.4; // standard background volume
     audioRef.current = audio;
@@ -51,10 +57,10 @@ export default function AudioPlayer({ isPlaying, onToggle, audioUrl = "https://w
   }, [isPlaying, onToggle]);
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 flex items-center gap-2">
+    <div className="fixed bottom-24 right-4 md:bottom-6 md:right-6 z-50 flex items-center gap-2">
       <button
         onClick={onToggle}
-        className={`p-3.5 bg-white/95 text-amber-800 rounded-full shadow-xl border border-amber-100 hover:bg-stone-50 cursor-pointer active:scale-95 transition-all group relative flex items-center justify-center`}
+        className={`p-3.5 bg-white/95 text-amber-800 rounded-full shadow-xl border border-amber-150/80 hover:bg-stone-50 cursor-pointer active:scale-95 transition-all group relative flex items-center justify-center`}
         title={isPlaying ? "Mute Musik" : "Putar Musik"}
         id="btn-floating-music"
       >

@@ -63,6 +63,22 @@ export default function AdminPanel({
     {
       title: "Lagu Utama Undangan (music.mp3)",
       url: "/music.mp3"
+    },
+    {
+      title: "Bruno Mars - Just The Way You Are",
+      url: "https://archive.org/download/bruno-mars-all-songs/01%20-%20Just%20The%20Way%20You%20Are.mp3"
+    },
+    {
+      title: "Bruno Mars - Marry You",
+      url: "https://archive.org/download/bruno-mars-all-songs/03%20-%20Marry%20You.mp3"
+    },
+    {
+      title: "Beautiful Wedding Piano (Royalty Free Preset)",
+      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"
+    },
+    {
+      title: "Soft Acoustic Guitar Romance (Royalty Free Preset)",
+      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
     }
   ];
 
@@ -368,7 +384,19 @@ Sampai ketemu di pesta nanti!
       }
       setTestPlaying(false);
     } else {
-      const newAudio = new Audio(songUrl);
+      let resolvedUrl = songUrl;
+      const isStaticHost = 
+        window.location.hostname.endsWith(".github.io") || 
+        window.location.hostname.includes("github.io") || 
+        (!window.location.port && window.location.hostname !== "localhost");
+
+      if (isStaticHost) {
+        if (songUrl.startsWith("/api/music.mp3") || songUrl.includes("/api/music.mp3")) {
+          resolvedUrl = "https://archive.org/download/bruno-mars-all-songs/01%20-%20Just%20The%20Way%20You%20Are.mp3";
+        }
+      }
+
+      const newAudio = new Audio(resolvedUrl);
       newAudio.volume = 0.5;
       newAudio.play()
         .then(() => {

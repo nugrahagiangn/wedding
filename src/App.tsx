@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { Heart, Sparkles, Volume2, Calendar, MapPin, Image as ImageIcon, MessageSquare } from "lucide-react";
+import { Heart, Sparkles, Volume2, Calendar, MapPin, Image as ImageIcon, MessageSquare, Users } from "lucide-react";
 
 // Import Components
 import Cover from "./components/Cover";
@@ -52,7 +52,6 @@ export default function App() {
         if (stored) {
           try {
             const parsed = JSON.parse(stored);
-            // DIUBAH MENJADI:
             setMusicUrl(parsed.activeSongUrl || "/music.mp3");
             setMusicTitle(parsed.activeSongTitle || "Lagu Utama (music.mp3)");
             return;
@@ -116,23 +115,44 @@ export default function App() {
             transition={{ duration: 0.8 }}
             className="w-full relative bg-stone-50"
           >
-            {/* Sticky/Floating Navigation Bar (Minimalist Indonesian style) */}
-            <header className="fixed top-4 inset-x-4 z-40 max-w-lg mx-auto flex items-center justify-between px-6 py-3 bg-white/80 backdrop-blur-md rounded-full border border-stone-200/50 shadow-md">
-              <span className="font-accent text-amber-900 text-lg font-bold">G&amp;C</span>
-              <nav className="flex items-center gap-1.5 md:gap-3 text-[10px] md:text-xs font-serif font-bold tracking-wider text-stone-600 uppercase">
-                <a href="#mempelai" className="hover:text-amber-800 transition-colors">Mempelai</a>
-                <span className="text-stone-300">•</span>
-                <a href="#acara" className="hover:text-amber-800 transition-colors">Acara</a>
-                <span className="text-stone-300">•</span>
-                <a href="#peta" className="hover:text-amber-800 transition-colors">Peta</a>
-                <span className="text-stone-300">•</span>
-                <a href="#galeri" className="hover:text-amber-800 transition-colors">Galeri</a>
-                <span className="text-stone-300">•</span>
-                <a href="#bukutamu" className="hover:text-amber-800 transition-colors text-amber-700">RSVP</a>
-                <span className="text-stone-300">•</span>
-                <button onClick={() => setIsAdminOpen(true)} className="hover:text-amber-800 transition-colors text-amber-600 cursor-pointer">Admin</button>
-              </nav>
-            </header>
+            {/* Floating Bottom Navigation Bar (Elegant Icon Buttons) */}
+            <nav className="fixed bottom-4 inset-x-4 z-40 max-w-md mx-auto flex items-center justify-around py-2 px-3 bg-white/95 backdrop-blur-md rounded-2xl border border-stone-200/60 shadow-xl">
+              <a 
+                href="#mempelai" 
+                className="flex flex-col items-center gap-1 text-center flex-1 py-1 text-stone-500 hover:text-amber-800 transition-colors active:scale-95 duration-100"
+              >
+                <Users className="w-4.5 h-4.5 text-stone-600 hover:text-amber-700 transition-colors" />
+                <span className="text-[9px] font-sans font-bold uppercase tracking-wider text-stone-500">Mempelai</span>
+              </a>
+              <a 
+                href="#acara" 
+                className="flex flex-col items-center gap-1 text-center flex-1 py-1 text-stone-500 hover:text-amber-800 transition-colors active:scale-95 duration-100"
+              >
+                <Calendar className="w-4.5 h-4.5 text-stone-600 hover:text-amber-700 transition-colors" />
+                <span className="text-[9px] font-sans font-bold uppercase tracking-wider text-stone-500">Acara</span>
+              </a>
+              <a 
+                href="#peta" 
+                className="flex flex-col items-center gap-1 text-center flex-1 py-1 text-stone-500 hover:text-amber-800 transition-colors active:scale-95 duration-100"
+              >
+                <MapPin className="w-4.5 h-4.5 text-stone-600 hover:text-amber-700 transition-colors" />
+                <span className="text-[9px] font-sans font-bold uppercase tracking-wider text-stone-500">Peta</span>
+              </a>
+              <a 
+                href="#galeri" 
+                className="flex flex-col items-center gap-1 text-center flex-1 py-1 text-stone-500 hover:text-amber-800 transition-colors active:scale-95 duration-100"
+              >
+                <ImageIcon className="w-4.5 h-4.5 text-stone-600 hover:text-amber-700 transition-colors" />
+                <span className="text-[9px] font-sans font-bold uppercase tracking-wider text-stone-500">Galeri</span>
+              </a>
+              <a 
+                href="#bukutamu" 
+                className="flex flex-col items-center gap-1 text-center flex-1 py-1 text-amber-700 hover:text-amber-900 transition-colors active:scale-95 duration-100"
+              >
+                <MessageSquare className="w-4.5 h-4.5 text-amber-700 hover:text-amber-850 transition-colors" />
+                <span className="text-[9px] font-sans font-bold uppercase tracking-wider text-amber-700">RSVP</span>
+              </a>
+            </nav>
 
             {/* floating Music actions */}
             <AudioPlayer isPlaying={isPlaying} onToggle={toggleMusic} audioUrl={musicUrl || undefined} />
