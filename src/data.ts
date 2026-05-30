@@ -17,7 +17,7 @@ export const mempelaiWanita: MempelaDetail = {
   photoUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800",
   fatherName: "Bapak - Pudin",
   motherName: "Ibu - Oyoh",
-  instagram: "https://instagram.com/cucurohimas",
+  instagram: "https://instagram.com/cucu_rohimas",
 };
 
 export const targetWeddingDate = "2026-06-28T08:00:00+07:00"; // Thursday, 28 Juni 2026 08:00 WIB
