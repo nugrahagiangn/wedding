@@ -714,7 +714,7 @@ Sampai ketemu di pesta nanti!
                       <label className="block text-[10px] text-stone-400 font-bold uppercase tracking-wider mb-1 font-sans">Nama Tamu Undangan</label>
                       <input 
                         type="text"
-                        placeholder="cth: Bapak Budi Santoso & Istri"
+                        placeholder="cth: Bapak Husein Al-Khawarizmi & Istri"
                         value={guestName}
                         onChange={(e) => setGuestName(e.target.value)}
                         className="w-full bg-stone-950 border border-stone-800 focus:border-amber-400/50 focus:outline-none rounded-lg px-3 py-2 text-xs font-sans text-stone-100"

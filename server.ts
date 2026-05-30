@@ -74,39 +74,12 @@ async function startServer() {
   const defaultEntries = [
     {
       id: "1",
-      name: "Budi Santoso",
-      relationship: "Teman Kuliah",
+      name: "Fulan dan Istri",
+      relationship: "Example",
       rsvpHadir: "hadir",
       countGuests: 2,
-      comment: "Selamat atas pernikahannya Arya & Shinta! Semoga dilancarkan semua prosesi acaranya dan menjadi keluarga yang sakinah, mawaddah, warahmah. Menuju ibadah terpanjang dengan bahagia!",
+      comment: "Test Test Test!",
       createdAt: new Date(Date.now() - 3600000 * 4).toISOString() // 4 hours ago
-    },
-    {
-      id: "2",
-      name: "Siti Rahma & Keluarga",
-      relationship: "Kerabat Shinta",
-      rsvpHadir: "hadir",
-      countGuests: 3,
-      comment: "Barakallahu lakuma wa baraka 'alaikuma wa jama'a bainakuma fii khair. Selamat menempuh hidup baru ya, Shinta sayang! Sangat bahagia mendengar kabar gembira ini.",
-      createdAt: new Date(Date.now() - 3600000 * 12).toISOString() // 12 hours ago
-    },
-    {
-      id: "3",
-      name: "Dimas & Astri",
-      relationship: "Sahabat Pengantin",
-      rsvpHadir: "hadir",
-      countGuests: 2,
-      comment: "Selamat mamen! Gak menyangka akhirnya nyanthol juga. Insya Allah gue dateng sama istri. Lancar-lancar ya sob sampe hari H!",
-      createdAt: new Date(Date.now() - 3600000 * 24).toISOString() // 1 day ago
-    },
-    {
-      id: "4",
-      name: "Ibu Hartati",
-      relationship: "Tetangga",
-      rsvpHadir: "absen",
-      countGuests: 0,
-      comment: "Selamat menempuh hidup baru untuk kedua mempelai. Mohon maaf Ibu tidak bisa hadir langsung karena sedang di luar kota. Doa terbaik dari jauh semoga samawa selalu.",
-      createdAt: new Date(Date.now() - 3600000 * 48).toISOString() // 2 days ago
     }
   ];
 

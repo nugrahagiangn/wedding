@@ -26,39 +26,12 @@ export default function BukuTamu({ initialGuestName = "" }: BukuTamuProps) {
   const getDefaultLocalEntries = () => [
     {
       id: "1",
-      name: "Budi Santoso",
+      name: "Fulan",
       relationship: "Teman Kuliah",
       rsvpHadir: "hadir",
       countGuests: 2,
-      comment: "Selamat atas pernikahannya Gian & Cucu! Semoga dilancarkan semua prosesi acaranya dan menjadi keluarga yang sakinah, mawaddah, warahmah. Menuju ibadah terpanjang dengan bahagia!",
+      comment: "Test Test Test!",
       createdAt: new Date(Date.now() - 3600000 * 4).toISOString()
-    },
-    {
-      id: "2",
-      name: "Siti Rahma & Keluarga",
-      relationship: "Kerabat Cucu",
-      rsvpHadir: "hadir",
-      countGuests: 3,
-      comment: "Barakallahu lakuma wa baraka 'alaikuma wa jama'a bainakuma fii khair. Selamat menempuh hidup baru ya, Cucu sayang! Sangat bahagia mendengar kabar gembira ini.",
-      createdAt: new Date(Date.now() - 3600000 * 12).toISOString()
-    },
-    {
-      id: "3",
-      name: "Dimas & Astri",
-      relationship: "Sahabat Pengantin",
-      rsvpHadir: "hadir",
-      countGuests: 2,
-      comment: "Selamat mamen! Gak menyangka akhirnya nyanthol juga. Insya Allah gue dateng. Lancar-lancar ya sob sampe hari H!",
-      createdAt: new Date(Date.now() - 3600000 * 24).toISOString()
-    },
-    {
-      id: "4",
-      name: "Ibu Hartati",
-      relationship: "Tetangga",
-      rsvpHadir: "absen",
-      countGuests: 0,
-      comment: "Selamat menempuh hidup baru untuk kedua mempelai. Mohon maaf Ibu tidak bisa hadir langsung karena sedang di luar kota. Doa terbaik dari jauh semoga samawa selalu.",
-      createdAt: new Date(Date.now() - 3600000 * 48).toISOString()
     }
   ];
 
