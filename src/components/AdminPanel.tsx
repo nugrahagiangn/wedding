@@ -61,20 +61,8 @@ export default function AdminPanel({
   // Preset background songs list
   const musicPresets = [
     {
-      title: "ZAYN, Usher & Jacquees - Risk It All (Aplikasi Lokal)",
-      url: "/api/music.mp3"
-    },
-    {
-      title: "Bruno Mars - Marry You",
-      url: "https://archive.org/download/bruno-mars-all-songs/03%20-%20Marry%20You.mp3"
-    },
-    {
-      title: "Bruno Mars - Just The Way You Are",
-      url: "https://archive.org/download/bruno-mars-all-songs/01%20-%20Just%20The%20Way%20You%20Are.mp3"
-    },
-    {
-      title: "Classical Piano Wedding (Royalty Free Preset)",
-      url: "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-8.mp3"
+      title: "Lagu Utama Undangan (music.mp3)",
+      url: "/music.mp3"
     }
   ];
 

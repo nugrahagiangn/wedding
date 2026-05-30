@@ -19,8 +19,8 @@ export default function App() {
   const [guestName, setGuestName] = useState("");
 
   // Custom states for active sound stream and pengantin settings
-  const [musicUrl, setMusicUrl] = useState("");
-  const [musicTitle, setMusicTitle] = useState("");
+  const [musicUrl, setMusicUrl] = useState("/music.mp3");
+  const [musicTitle, setMusicTitle] = useState("Lagu Utama (music.mp3)");
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [guestbookRefreshKey, setGuestbookRefreshKey] = useState(0);
 
@@ -52,13 +52,14 @@ export default function App() {
         if (stored) {
           try {
             const parsed = JSON.parse(stored);
-            setMusicUrl("https://pub-c5e31b5cdafb419a86617dd1d3e92ef9.r2.dev/ZAYN%20%26%20Usher%20-%20Risk%20It%20All.mp3");
-setMusicTitle("ZAYN, Usher & Jacquees - Risk It All")
+            // DIUBAH MENJADI:
+            setMusicUrl(parsed.activeSongUrl || "/music.mp3");
+            setMusicTitle(parsed.activeSongTitle || "Lagu Utama (music.mp3)");
             return;
           } catch (e) {}
         }
-        setMusicUrl("https://archive.org/download/bruno-mars-all-songs/01%20-%20Just%20The%20Way%20You%20Are.mp3");
-        setMusicTitle("Bruno Mars - Just The Way You Are");
+        setMusicUrl("/music.mp3");
+        setMusicTitle("Lagu Utama (music.mp3)");
       });
   }, []);
 
