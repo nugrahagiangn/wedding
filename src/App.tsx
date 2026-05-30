@@ -12,6 +12,7 @@ import Galeri from "./components/Galeri";
 import BukuTamu from "./components/BukuTamu";
 import AmplopDigital from "./components/AmplopDigital";
 import AdminPanel from "./components/AdminPanel";
+// import coverImage from "./images/cover.jpeg";
 
 export default function App() {
   const [isOpen, setIsOpen] = useState(false);
@@ -162,6 +163,7 @@ export default function App() {
               <div 
                 className="absolute inset-0 bg-cover bg-center opacity-25 scale-100"
                 style={{ 
+                  // backgroundImage: `url(${coverImage})` 
                   backgroundImage: `url('https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=1200')` 
                 }}
               />

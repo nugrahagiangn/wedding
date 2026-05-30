@@ -15,8 +15,8 @@ export const mempelaiWanita: MempelaDetail = {
   fullName: "Cucu Rohimas",
   nickName: "Cucu",
   photoUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800",
-  fatherName: "Bapak -",
-  motherName: "Ibu -",
+  fatherName: "Bapak - Pudin",
+  motherName: "Ibu - Oyoh",
   instagram: "https://instagram.com/cucurohimas",
 };
 
@@ -36,8 +36,8 @@ export const mandiriAccount = {
 
 export const giftAddress = {
   name: "Kediaman Mempelai Wanita",
-  address: "Kp. Manguneng, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, Jawa Barat, 10310",
-  receiver: "Bu Nelis / Cucu",
+  address: "Kp. Manguneng RT/RW 04/09, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, 44165",
+  receiver: "Teh Nelis / Cucu",
 };
 
 export const agendaAkad: AgendaEvent = {
@@ -45,9 +45,9 @@ export const agendaAkad: AgendaEvent = {
   dateStr: "Ahad, 28 Juni 2026",
   timeStr: "08:00 - 10:00 WIB",
   locationName: "Rumah Kediaman Mempelai Wanita",
-  address: "Kp. Manguneng, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, Jawa Barat, 10310",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m12!1m3!1d3966.4526019599554!2d106.83155797587844!3d-6.203871993783935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f41764eb8cf3%3A0xc3f8e5b66d5b03bc!2sMasjid%20Agung%20Sunda%20Kelapa!5e0!3m2!1sid!2sid!4v1716380000000!5m2!1sid!2sid",
-  mapNavigationUrl: "https://maps.apple.com/?address=Masjid%20Agung%20Sunda%20Kelapa&ll=-6.203872,106.831558&q=Arah%20Lokasi",
+  address: "Kp. Manguneng RT/RW 04/09, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, 44165",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.442903517223!2d107.6073002!3d-7.4550998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6620f002feaf33%3A0x2ecf07b5c7c24898!2sTOKO%20SRC%20Ucu!5e0!3m2!1sen!2sid!4v1700000000000",
+  mapNavigationUrl: "https://maps.app.goo.gl/Vh5EfmQCjjRFbQJm6",
 };
 
 export const agendaResepsi: AgendaEvent = {
@@ -55,9 +55,9 @@ export const agendaResepsi: AgendaEvent = {
   dateStr: "Ahad, 28 Juni 2026",
   timeStr: "08:00 - selesai WIB",
   locationName: "Rumah Kediaman Mempelai Wanita",
-  address: "Kp. Manguneng, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, Jawa Barat, 10310",
-  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3953.518608882937!2d107.6961136!3d-7.4646549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e680df8374d898d%3A0x6e9f16e788bc11e6!2sBungbulang%2C%20Kabupaten%20Garut%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1716380000000!5m2!1sid!2sid",
-  mapNavigationUrl: "https://maps.google.com/?q=Bungbulang+Garut",
+  address: "Kp. Manguneng RT/RW 04/09, Ds. Cihikeu, Kec. Bungbulang, Kab. Garut, 44165",
+  mapEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.442903517223!2d107.6073002!3d-7.4550998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6620f002feaf33%3A0x2ecf07b5c7c24898!2sTOKO%20SRC%20Ucu!5e0!3m2!1sen!2sid!4v1700000000000",
+  mapNavigationUrl: "https://maps.app.goo.gl/Vh5EfmQCjjRFbQJm6",
 };
 
 export const galleryImages = [
