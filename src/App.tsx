@@ -336,8 +336,8 @@ export default function App() {
   const [guestName, setGuestName] = useState("");
 
   // Custom states for active sound stream and pengantin settings
-  const [musicUrl, setMusicUrl] = useState("/music.mp3");
-  const [musicTitle, setMusicTitle] = useState("Lagu Utama (music.mp3)");
+  const [musicUrl, setMusicUrl] = useState("brunomars.mp3");
+  const [musicTitle, setMusicTitle] = useState("Bruno Mars - Risk It All");
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [guestbookRefreshKey, setGuestbookRefreshKey] = useState(0);
   const [activeSection, setActiveSection] = useState("");
@@ -414,13 +414,13 @@ export default function App() {
         if (stored) {
           try {
             const parsed = JSON.parse(stored);
-            setMusicUrl(parsed.activeSongUrl || "/music.mp3");
-            setMusicTitle(parsed.activeSongTitle || "Lagu Utama (music.mp3)");
+            setMusicUrl(parsed.activeSongUrl || "brunomars.mp3");
+            setMusicTitle(parsed.activeSongTitle || "Bruno Mars - Risk It All");    
             return;
           } catch (e) {}
         }
-        setMusicUrl("/music.mp3");
-        setMusicTitle("Lagu Utama (music.mp3)");
+        setMusicUrl("brunomars.mp3");
+        setMusicTitle("Bruno Mars - Risk It All");
       });
   }, []);
 
@@ -554,7 +554,7 @@ export default function App() {
               <div 
                 className="absolute inset-0 bg-cover bg-center opacity-25 scale-100"
                 style={{ 
-                  backgroundImage: `url('/images/bg.jpeg')` 
+                  backgroundImage: `url('/wedding/images/bg.jpeg')` 
                 }}
               />
               {/* Subtle visual gradient edge on bottom */}
