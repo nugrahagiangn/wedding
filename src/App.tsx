@@ -313,7 +313,8 @@
 // }
 
 
-// perbaikan
+
+// new
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { Heart, Sparkles, Volume2, Calendar, MapPin, Image as ImageIcon, MessageSquare, Users } from "lucide-react";
@@ -341,38 +342,47 @@ export default function App() {
   const [guestbookRefreshKey, setGuestbookRefreshKey] = useState(0);
   const [activeSection, setActiveSection] = useState("");
 
-  // Scroll spy to highlight active section in bottom navigation
+  // Scroll spy to highlight active section in bottom navigation using bounding rect calculations
   useEffect(() => {
     if (!isOpen) return;
 
-    const sections = ["mempelai", "acara", "peta", "galeri", "bukutamu"];
-    
-    const observerOptions = {
-      root: null,
-      rootMargin: "-20% 0px -40% 0px",
-      threshold: 0.15,
-    };
+    const handleScroll = () => {
+      const sections = ["mempelai", "acara", "peta", "galeri", "bukutamu"];
+      let currentActive = "";
+      
+      const viewportHeight = window.innerHeight;
+      const triggerPoint = viewportHeight * 0.45; // Trigger scroll active state at 45% of viewport height
 
-    const observerCallback = (entries: IntersectionObserverEntry[]) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-    const timer = setTimeout(() => {
-      sections.forEach((id) => {
+      for (const id of sections) {
         const element = document.getElementById(id);
-        if (element) observer.observe(element);
-      });
-    }, 150);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          // If the trigger point is within the section's top & bottom bounds
+          if (rect.top <= triggerPoint && rect.bottom >= triggerPoint) {
+            currentActive = id;
+            break;
+          }
+        }
+      }
+
+      // Safe fallback: if scrolled almost to the very bottom, always active the last section (bukutamu)
+      if (window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 120) {
+        currentActive = "bukutamu";
+      }
+
+      setActiveSection(currentActive);
+    };
+
+    // Calculate immediately on mount/open
+    handleScroll();
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    // Run an extra check shortly after to ensure it calculates once the DOM height settles
+    const extraCheck = setTimeout(handleScroll, 200);
 
     return () => {
-      clearTimeout(timer);
-      observer.disconnect();
+      window.removeEventListener("scroll", handleScroll);
+      clearTimeout(extraCheck);
     };
   }, [isOpen]);
 
