@@ -13,8 +13,8 @@ export const mempelaiPria: MempelaDetail = {
 export const mempelaiWanita: MempelaDetail = {
   role: "wanita",
   fullName: "Cucu Rohimas",
-  nickName: "Cucu", 
-  photoUrl: "url('/wedding/images/female.jpeg')?auto=format&fit=crop&q=80&w=800",
+  nickName: "Cucu",
+  photoUrl: "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&q=80&w=800",
   fatherName: "Bapak - Pudin",
   motherName: "Ibu - Oyoh",
   instagram: "https://instagram.com/cucu_rohimas",
