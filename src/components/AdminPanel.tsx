@@ -177,7 +177,7 @@ Sampai ketemu di pesta nanti!
       setIsAuthenticated(true);
       setErrorMsg("");
     } else {
-      setErrorMsg("Kode PIN salah. Tips: Gunakan tanggal nikah pengantin (140526) atau kata sandi 'admin'.");
+      setErrorMsg("Kode PIN salah. Silahkan periksa lagi.");
     }
   };
 
