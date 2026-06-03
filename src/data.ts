@@ -63,7 +63,8 @@ export const agendaResepsi: AgendaEvent = {
 export const galleryImages = [
   {
     id: "g1",
-    url: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800",
+    // url: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800",
+    url: "url('/wedding/images/male.jpeg')?auto=format&fit=crop&q=80&w=800",
     caption: "Momen Kebersamaan",
   },
   {
