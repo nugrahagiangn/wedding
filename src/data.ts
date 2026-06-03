@@ -69,7 +69,8 @@ export const galleryImages = [
   },
   {
     id: "g2",
-    url: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800",
+    // url: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800",
+    url: "url('/wedding/images/bg.jpeg')?auto=format&fit=crop&q=80&w=800",
     caption: "Buket Bunga Impian",
   },
   {

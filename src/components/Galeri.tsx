@@ -2,6 +2,15 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { X, ChevronLeft, ChevronRight, ZoomIn } from "lucide-react";
 import { galleryImages } from "../data";
+function resolvePhotoUrl(url: string) {
+  if (url && url.startsWith("url(")) {
+    const match = url.match(/^url\(['"]?([^'"]+)['"]?\)(.*)$/);
+    if (match) {
+      return match[1] + match[2];
+    }
+  }
+  return url;
+}
 
 export default function Galeri() {
   const [activePhotoIndex, setActivePhotoIndex] = useState<number | null>(null);
@@ -60,7 +69,7 @@ export default function Galeri() {
             >
               {/* Image with zoom on hover */}
               <img
-                src={img.url}
+                src={resolvePhotoUrl(img.url)}
                 alt={img.caption}
                 referrerPolicy="no-referrer"
                 className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
@@ -122,7 +131,7 @@ export default function Galeri() {
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0, scale: 0.95 }}
                 transition={{ duration: 0.3 }}
-                src={galleryImages[activePhotoIndex].url}
+                src={resolvePhotoUrl(galleryImages[activePhotoIndex].url)}
                 alt={galleryImages[activePhotoIndex].caption}
                 referrerPolicy="no-referrer"
                 className="max-w-full max-h-full object-contain rounded-xl shadow-2xl border border-stone-900"
