@@ -173,7 +173,7 @@ Sampai ketemu di pesta nanti!
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     // Simple secure password: May 14, 2026 is Gian-Cucu wedding -> 140526, or "admin"
-    if (passcode.trim() === "140526" || passcode.toLowerCase() === "admin") {
+    if (passcode.trim() === "280626" || passcode.toLowerCase() === "nimda") {
       setIsAuthenticated(true);
       setErrorMsg("");
     } else {
