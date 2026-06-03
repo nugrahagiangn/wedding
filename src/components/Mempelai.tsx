@@ -2,6 +2,15 @@ import { motion } from "motion/react";
 import { Instagram, Heart } from "lucide-react";
 import { mempelaiPria, mempelaiWanita } from "../data";
 
+function resolvePhotoUrl(url: string) {
+  if (url && url.startsWith("url(")) {
+    const match = url.match(/^url\(['"]?([^'"]+)['"]?\)(.*)$/);
+    if (match) {
+      return match[1] + match[2];
+    }
+  }
+  return url;
+}
 export default function Mempelai() {
   const itemVariants = {
     hidden: { opacity: 0, y: 30 },
@@ -66,7 +75,7 @@ export default function Mempelai() {
               {/* Image Frame with Double Border */}
               <div className="absolute -inset-1.5 rounded-full border border-amber-600/30 group-hover:scale-105 transition-transform duration-500 pointer-events-none" />
               <img 
-                src={mempelaiPria.photoUrl} 
+                src={resolvePhotoUrl(mempelaiPria.photoUrl)} 
                 alt={mempelaiPria.fullName}
                 className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-inner bg-stone-100"
               />
@@ -128,7 +137,7 @@ export default function Mempelai() {
               {/* Image Frame with Double Border */}
               <div className="absolute -inset-1.5 rounded-full border border-amber-600/30 group-hover:scale-105 transition-transform duration-500 pointer-events-none" />
               <img 
-                src={mempelaiWanita.photoUrl} 
+                src={resolvePhotoUrl(mempelaiWanita.photoUrl)} 
                 alt={mempelaiWanita.fullName}
                 className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-inner bg-stone-100"
               />
