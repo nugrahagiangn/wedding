@@ -1,0 +1,11 @@
+[
+  {
+    "id": "1",
+    "name": "Fulan dan Istri",
+    "relationship": "Example",
+    "rsvpHadir": "hadir",
+    "countGuests": 2,
+    "comment": "Test Test Test!",
+    "createdAt": "2026-06-02T21:43:06.539Z"
+  }
+]

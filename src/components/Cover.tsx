@@ -29,14 +29,29 @@ export default function Cover({ onOpen, guestName }: CoverProps) {
 
       <div className="relative text-center max-w-lg px-6 flex flex-col items-center justify-center py-12 z-10 space-y-8">
         {/* Wedding emblem */}
-        <motion.div 
+        {/* <motion.div 
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="relative inline-flex items-center justify-center p-4 bg-amber-400/5 rounded-full border border-amber-400/20 animate-float"
         >
           <div className="absolute inset-0 bg-amber-400/5 rounded-full animate-pulse-ring" />
-          {/* <Heart className="w-8 h-8 text-amber-500 fill-amber-500/20" /> */}
+          <Heart className="w-8 h-8 text-amber-500 fill-amber-500/20" />
+        </motion.div> */}
+
+        <motion.div 
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+          className="relative inline-flex items-center justify-center p-2.5 bg-amber-400/5 rounded-full border border-amber-400/20 animate-float"
+        >
+          <div className="absolute inset-0 bg-amber-400/5 rounded-full animate-pulse-ring" />
+          <img 
+            src="/images/lm.jpeg" 
+            alt="Gian & Cucu" 
+            className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border border-amber-400/35 shadow-lg" 
+            referrerPolicy="no-referrer"
+          />
         </motion.div>
 
         <div className="space-y-3">
