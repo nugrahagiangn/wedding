@@ -137,7 +137,7 @@ export default function Mempelai() {
               {/* Image Frame with Double Border */}
               <div className="absolute -inset-1.5 rounded-full border border-amber-600/30 group-hover:scale-105 transition-transform duration-500 pointer-events-none" />
               <img 
-                src={resolvePhotoUrl(mempelaiPria.photoUrl)} 
+                src={resolvePhotoUrl(mempelaiWanita.photoUrl)} 
                 alt={mempelaiWanita.fullName}
                 className="w-40 h-40 md:w-48 md:h-48 rounded-full object-cover shadow-inner bg-stone-100"
               />
