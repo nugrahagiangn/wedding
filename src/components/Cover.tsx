@@ -36,7 +36,7 @@ export default function Cover({ onOpen, guestName }: CoverProps) {
           className="relative inline-flex items-center justify-center p-4 bg-amber-400/5 rounded-full border border-amber-400/20 animate-float"
         >
           <div className="absolute inset-0 bg-amber-400/5 rounded-full animate-pulse-ring" />
-          <Heart className="w-8 h-8 text-amber-500 fill-amber-500/20" />
+          {/* <Heart className="w-8 h-8 text-amber-500 fill-amber-500/20" /> */}
         </motion.div>
 
         <div className="space-y-3">
