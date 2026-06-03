@@ -1,4 +1,4 @@
-import { MempelaDetail, AgendaEvent, LoveStory } from "./types";
+import { MempelaDetail, AgendaEvent, LoveStory, GuestInviterGroup } from "./types";
 
 export const mempelaiPria: MempelaDetail = {
   role: "pria",
@@ -120,8 +120,38 @@ export const loveStories: LoveStory[] = [
   {
     id: "story-4",
     title: "Pernikahan Suci",
-    dateStr: "Mei 2026",
-    description: "Hari bersejarah yang dinanti pun tiba. Dengan tulus ikhlas serta restu semesta, kami dipersatukan dalam ikatan pernikahan yang sah dan abadi. Lembaran baru petualangan cinta kami pun dimulai hari ini.",
+    dateStr: "Juni 2026",
+    description: "Kini, dengan penuh syukur dan cinta, kami memulai perjalanan baru. Mengikat janji suci untuk saling mencintai, menghormati dan bersama hingga akhir hayat.",
     imageUrl: "https://images.unsplash.com/photo-1519225495810-7512c696505a?auto=format&fit=crop&q=80&w=800"
   }
 ];
+
+export const turutMengundang: GuestInviterGroup[] = [
+  {
+    category: "Keluarga Besar Mempelai Pria",
+    names: [
+      "Bpk. H. Rahmat & Ibu Hj. Aminah (Kakek / Nenek)",
+      "Bpk. Agus Sudrajat & Ibu Lilis (Uwak)",
+      "Bpk. Tisna & Ibu Rina (Paman / Bibi)",
+      "Sdr. Dedi, Dina & Dani (Kakak / Adik / Sepupu)",
+    ]
+  },
+  {
+    category: "Keluarga Besar Mempelai Wanita",
+    names: [
+      "Bpk. Abah Oyo & Ibu Mak Kokom (Kakek / Nenek)",
+      "Bpk. H. Jajang & Ibu Hj. Imas (Paman / Bibi)",
+      "Bpk. H. Mamat & Ibu Ceu Yuyun (Uwak)",
+      "Sdr. Asep, Neng & Cecep (Kakak / Adik / Sepupu)",
+    ]
+  },
+  {
+    category: "Sahabat & Rekan Kerja",
+    names: [
+      "Teman-teman Alumni SMAN 1 Garut",
+      "Keluarga Besar Komunitas IT & Programmer Garut",
+      "Rekan Kerja dan Sahabat Dekat Kedua Mempelai"
+    ]
+  }
+];
+

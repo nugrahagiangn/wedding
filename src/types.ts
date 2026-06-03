@@ -35,3 +35,8 @@ export interface LoveStory {
   description: string;
   imageUrl: string;
 }
+
+export interface GuestInviterGroup {
+  category: string;
+  names: string[];
+}

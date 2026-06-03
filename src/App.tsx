@@ -323,6 +323,7 @@ import { Heart, Sparkles, Volume2, Calendar, MapPin, Image as ImageIcon, Message
 import Cover from "./components/Cover";
 import AudioPlayer from "./components/AudioPlayer";
 import Mempelai from "./components/Mempelai";
+import TurutMengundang from "./components/TurutMengundang";
 import Acara from "./components/Acara";
 import PetaLokasi from "./components/PetaLokasi";
 import Galeri from "./components/Galeri";
@@ -603,6 +604,9 @@ export default function App() {
               
               {/* Mempelai Segment */}
               <Mempelai />
+
+              {/* Turut Mengundang Segment */}
+              <TurutMengundang />
 
               {/* Acara & Schedule Segment */}
               <Acara />
