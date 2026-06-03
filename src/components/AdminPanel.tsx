@@ -521,7 +521,7 @@ Sampai ketemu di pesta nanti!
             </form>
             
             <div className="pt-4 text-[10px] text-stone-500 italic">
-              Petunjuk: PIN adalah tanggal pernikahan (<b>120926</b>) atau cukup ketik kata sandi &quot;<b>admin</b>&quot;.
+              Petunjuk: Masukkan PIN atau password untuk masuk sebagai (&quot;<b>Admin</b>&quot;) .
             </div>
           </div>
         ) : (
