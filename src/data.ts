@@ -1,4 +1,4 @@
-import { MempelaDetail, AgendaEvent } from "./types";
+import { MempelaDetail, AgendaEvent, LoveStory } from "./types";
 
 export const mempelaiPria: MempelaDetail = {
   role: "pria",
@@ -93,4 +93,35 @@ export const galleryImages = [
     url: "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&q=80&w=800",
     caption: "Kue Pernikahan Cantik",
   },
+];
+
+export const loveStories: LoveStory[] = [
+  {
+    id: "story-1",
+    title: "Awal Pertemuan",
+    dateStr: "Oktober 2020",
+    description: "Tuhan menakdirkan pertemuan pertama kami secara tak sengaja. Bermula dari sebuah obrolan sederhana yang penuh canda tawa, ada secercah keyakinan kecil di lubuk hati bahwa kebersamaan ini tidak akan berlalu begitu saja.",
+    imageUrl: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    id: "story-2",
+    title: "Menjalin Hubungan",
+    dateStr: "Maret 2021",
+    description: "Seiring berjalannya waktu, kami memutuskan untuk berkomitmen melangkah bersama. Melalui suka dan duka kehidupan, saling memahami segala kekurangan, dan menguatkan satu sama lain untuk menjadi pribadi yang lebih baik setiap harinya.",
+    imageUrl: "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    id: "story-3",
+    title: "Momen Lamaran (Proposal)",
+    dateStr: "Desember 2025",
+    description: "Di hadapan kedua keluarga besar, kami mengikrarkan janji suci pertunangan. Langkah penuh keberanian untuk menyatukan visi, restu tulus orang tua menuntun kami menuju pintu gerbang yang mulia ini.",
+    imageUrl: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=800"
+  },
+  {
+    id: "story-4",
+    title: "Pernikahan Suci",
+    dateStr: "Mei 2026",
+    description: "Hari bersejarah yang dinanti pun tiba. Dengan tulus ikhlas serta restu semesta, kami dipersatukan dalam ikatan pernikahan yang sah dan abadi. Lembaran baru petualangan cinta kami pun dimulai hari ini.",
+    imageUrl: "https://images.unsplash.com/photo-1519225495810-7512c696505a?auto=format&fit=crop&q=80&w=800"
+  }
 ];

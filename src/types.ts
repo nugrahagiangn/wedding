@@ -27,3 +27,11 @@ export interface AgendaEvent {
   mapEmbedUrl: string;
   mapNavigationUrl: string;
 }
+
+export interface LoveStory {
+  id: string;
+  title: string;
+  dateStr: string;
+  description: string;
+  imageUrl: string;
+}
