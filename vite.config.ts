@@ -7,6 +7,10 @@ export default defineConfig(() => {
   return {
     base: './',
     plugins: [react(), tailwindcss()],
+    build: {
+      outDir: 'wedding', // Ganti 'wedding' dengan nama folder yang Anda inginkan (misalnya 'wedding', 'build', dll)
+      emptyOutDir: true,
+    },
     resolve: {
       alias: {
         '@': path.resolve(__dirname, '.'),
