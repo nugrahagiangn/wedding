@@ -4,7 +4,7 @@ export const mempelaiPria: MempelaDetail = {
   role: "pria",
   fullName: "Gian Nugraha",
   nickName: "Gian",
-  photoUrl: "url('/wedding/dist/images/male.jpeg')?auto=format&fit=crop&q=80&w=800",
+  photoUrl: "url('/wedding/images/male.jpeg')?auto=format&fit=crop&q=80&w=800",
   fatherName: "Bapak Endang Sudrajat",
   motherName: "Ibu Siti Mariyam",
   instagram: "https://instagram.com/nugrahagiangn",
@@ -14,7 +14,7 @@ export const mempelaiWanita: MempelaDetail = {
   role: "wanita",
   fullName: "Cucu Rohimas",
   nickName: "Cucu", 
-  photoUrl: "url('/wedding/dist/images/female.jpeg')?auto=format&fit=crop&q=80&w=800",
+  photoUrl: "url('/wedding/images/female.jpeg')?auto=format&fit=crop&q=80&w=800",
   fatherName: "Bapak - Pudin",
   motherName: "Ibu - Oyoh",
   instagram: "https://instagram.com/cucu_rohimas",
@@ -64,13 +64,13 @@ export const galleryImages = [
   {
     id: "g1",
     // url: "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800",
-    url: "url('/wedding/dist/images/male.jpeg')?auto=format&fit=crop&q=80&w=800",
+    url: "url('/wedding/images/male.jpeg')?auto=format&fit=crop&q=80&w=800",
     caption: "Momen Kebersamaan",
   },
   {
     id: "g2",
     // url: "https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&q=80&w=800",
-    url: "url('/wedding/dist/images/bg.jpeg')?auto=format&fit=crop&q=80&w=800",
+    url: "url('/wedding/images/bg.jpeg')?auto=format&fit=crop&q=80&w=800",
     caption: "Buket Bunga Impian",
   },
   {
@@ -115,7 +115,7 @@ export const loveStories: LoveStory[] = [
     title: "Momen Lamaran (Proposal)",
     dateStr: "Desember 2025",
     description: "Di hadapan kedua keluarga besar, kami mengikrarkan janji suci pertunangan. Langkah penuh keberanian untuk menyatukan visi, restu tulus orang tua menuntun kami menuju pintu gerbang yang mulia ini.",
-    imageUrl: "url('/wedding/dist/images/lm.jpeg')?auto=format&fit=crop&q=80&w=800"
+    imageUrl: "url('/wedding/images/lm.jpeg')?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: "story-4",

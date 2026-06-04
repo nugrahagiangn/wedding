@@ -555,7 +555,7 @@ export default function App() {
               <div 
                 className="absolute inset-0 bg-cover bg-center opacity-25 scale-100"
                 style={{ 
-                  backgroundImage: `url('/wedding/dist/images/bg.jpeg')` 
+                  backgroundImage: `url('/wedding/images/bg.jpeg')` 
                 }}
               />
               {/* Subtle visual gradient edge on bottom */}
