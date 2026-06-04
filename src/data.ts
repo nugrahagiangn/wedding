@@ -115,7 +115,7 @@ export const loveStories: LoveStory[] = [
     title: "Momen Lamaran (Proposal)",
     dateStr: "Desember 2025",
     description: "Di hadapan kedua keluarga besar, kami mengikrarkan janji suci pertunangan. Langkah penuh keberanian untuk menyatukan visi, restu tulus orang tua menuntun kami menuju pintu gerbang yang mulia ini.",
-    imageUrl: "https://images.unsplash.com/photo-1515934751635-c81c6bc9a2d8?auto=format&fit=crop&q=80&w=800"
+    imageUrl: "url('/wedding/images/lm.jpeg')?auto=format&fit=crop&q=80&w=800"
   },
   {
     id: "story-4",
@@ -130,7 +130,7 @@ export const turutMengundang: GuestInviterGroup[] = [
   {
     category: "Keluarga Besar Mempelai Pria",
     names: [
-      "Bpk. H. Rahmat & Ibu Hj. Aminah (Kakek / Nenek)",
+      "Bpk. Enjang Supriyatna dan keluarga",
       "Bpk. Agus Sudrajat & Ibu Lilis (Uwak)",
       "Bpk. Tisna & Ibu Rina (Paman / Bibi)",
       "Sdr. Dedi, Dina & Dani (Kakak / Adik / Sepupu)",
@@ -148,9 +148,10 @@ export const turutMengundang: GuestInviterGroup[] = [
   {
     category: "Sahabat & Rekan Kerja",
     names: [
-      "Teman-teman Alumni SMAN 1 Garut",
-      "Keluarga Besar Komunitas IT & Programmer Garut",
-      "Rekan Kerja dan Sahabat Dekat Kedua Mempelai"
+      "Teman-teman Alumni (Python) #15 Universitas Nasional PASIM Bandung",
+      "Rekan Kerja PT. Changsin Reksa Jaya",
+      "Rekan Kerja (Management Information System) PT. Dialogue Group",
+      "Teman-teman Olahraga Badminton (Support) PT. Dialogue Group"
     ]
   }
 ];
