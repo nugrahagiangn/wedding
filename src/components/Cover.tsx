@@ -13,7 +13,7 @@ export default function Cover({ onOpen, guestName }: CoverProps) {
       <div 
         className="absolute inset-0 bg-cover bg-center brightness-[0.25] scale-105"
         style={{ 
-          backgroundImage: `url('/wedding/images/bg.jpeg')` 
+          backgroundImage: `url('/wedding/images/dist/bg.jpeg')` 
         }}
       />
       
@@ -47,7 +47,7 @@ export default function Cover({ onOpen, guestName }: CoverProps) {
         >
           <div className="absolute inset-0 bg-amber-400/5 rounded-full animate-pulse-ring" />
           <img 
-            src="/wedding/images/lm.jpeg" 
+            src="/wedding/images/dist/lm.jpeg" 
             alt="Gian & Cucu" 
             className="w-24 h-24 sm:w-28 sm:h-28 rounded-full object-cover border border-amber-400/35 shadow-lg" 
             referrerPolicy="no-referrer"
