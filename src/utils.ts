@@ -1,15 +1,37 @@
+// export function resolvePhotoUrl(url: string): string {
+//   if (!url) return "";
+//   const clean = url.trim();
+//   if (clean.startsWith("url(")) {
+//     const match = clean.match(/^url\(['"]?([^'"]+)['"]?\)(.*)$/);
+//     if (match) {
+//       return match[1] + match[2];
+//     }
+//   }
+//   return clean;
+// }
 export function resolvePhotoUrl(url: string): string {
   if (!url) return "";
-  const clean = url.trim();
+
+  let clean = url.trim();
+
   if (clean.startsWith("url(")) {
-    const match = clean.match(/^url\(['"]?([^'"]+)['"]?\)(.*)$/);
+    const match = clean.match(/^url\(['"]?([^'"]+)['"]?\)$/);
     if (match) {
-      return match[1] + match[2];
+      clean = match[1];
     }
   }
-  return clean;
-}
 
+  // URL absolut
+  if (/^https?:\/\//i.test(clean)) {
+    return clean;
+  }
+
+  // Hindari double wedding
+  clean = clean.replace(/^\/?(dist\/)?/, "");
+  clean = clean.replace(/^wedding\//, "");
+
+  return `/wedding/${clean}`;
+}
 export function copyToClipboard(text: string, onSuccess: () => void): void {
   if (navigator.clipboard && navigator.clipboard.writeText) {
     navigator.clipboard.writeText(text)
